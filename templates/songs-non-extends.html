@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SongBase</title>
+	</head>
+	
+	<body>
+		{# Comment #}
+		
+		<h1>This is the song list</h1>
+		
+		<ul>
+		{% for song in songs %}
+			<li>{{song}}</li>
+		{% endfor%}
+		</ul>
+		<img src="/static/img/songbase-logo.png" alt="">
+		<h1>All Users</h1>
+		<img src="{{ url_for('static', filename='img/songbase-logo.png') }}"
+		 alt="SongBase">
+	</body>
+</html>
